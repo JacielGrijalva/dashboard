@@ -12,7 +12,10 @@ export default function CounterPage() {
         setNumero(numero + 1)
     }
     const decrementNumero = () => {
-        setNumero(numero - 1)
+        if (numero > 0) {
+            setNumero(numero - 1)
+
+        }
     }
 
     return (
