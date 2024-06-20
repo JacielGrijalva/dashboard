@@ -1,7 +1,7 @@
 'use client'
 import { useState } from "react"
 
-const cartShoping = () => {
+const CartShoping = () => {
 
 
     const [numero, setNumero] = useState<number>(5)
@@ -24,4 +24,4 @@ const cartShoping = () => {
     )
 }
 
-export default cartShoping
+export default CartShoping
