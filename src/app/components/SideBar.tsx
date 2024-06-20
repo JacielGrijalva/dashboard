@@ -5,27 +5,34 @@ import SideBarMenuItem from './SideBarMenuItem';
 import { IoLogoReact } from "@react-icons/all-files/io5/IoLogoReact";
 import { IoBrowsersOutline } from "@react-icons/all-files/io5/IoBrowsersOutline";
 import { IoCalculator } from "@react-icons/all-files/io5/IoCalculator";
+import { IoFootball } from "@react-icons/all-files/io5/IoFootball";
 
 const menuItems = [
     {
-        path:'/dashboard/main',
-        icon:<IoBrowsersOutline size={40} />,
+        path: '/dashboard/main',
+        icon: <IoBrowsersOutline size={40} />,
         title: 'Dashboard',
         subTitle: 'Visualización'
     },
     {
-        path:'/dashboard/counter',
-        icon:<IoCalculator size={40} />,
+        path: '/dashboard/counter',
+        icon: <IoCalculator size={40} />,
         title: 'counter',
         subTitle: 'contador cliente side'
-    }
+    },
+    {
+        path: '/dashboard/pokemons',
+        icon: <IoFootball size={40} />,
+        title: 'Pokemons',
+        subTitle: 'pokemons generación estatica'
+    },
 ]
 
 const SideBar = () => {
     return (
         <div id="menu"
             style={{ width: '400px' }}
-            className="bg-gray-900 min-h-screen z-10 text-slate-300 w-64 left-0 h-screen overflow-y-scroll">
+            className=" bg-gray-900  z-10 text-slate-300 w-64 left-0  ">
 
             <div id="logo" className="my-4 px-6">
                 <h1 className="flex items-center  text-lg md:text-2xl font-bold text-white">

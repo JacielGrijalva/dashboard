@@ -1,10 +1,15 @@
 'use client'
 import { useState } from "react"
 
-const CartShoping = () => {
+//al agregarle el ? entonces significa que es opcional entonces la tenemos que inicializar
+
+interface Props {
+    namber?: number
+}
+const CartShoping = ({ namber = 5 }: Props) => {
 
 
-    const [numero, setNumero] = useState<number>(5)
+    const [numero, setNumero] = useState<number>(namber)
 
     return (
         <>
@@ -25,3 +30,5 @@ const CartShoping = () => {
 }
 
 export default CartShoping
+
+ 
