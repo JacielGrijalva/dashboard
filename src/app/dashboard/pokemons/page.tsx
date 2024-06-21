@@ -1,7 +1,7 @@
 // prc -> crea componente
 
-import { PokemonsResponce, SimplePokemon } from "@/app/pokemons";
-import { PokemonGrid } from "@/app/shopping-cart";
+import { PokemonsResponce, SimplePokemon } from "@/pokemons";
+import { PokemonGrid } from "@/shopping-cart";
 
 
 const getPokemons = async (limit = 20, offset = 0): Promise<SimplePokemon[]> => {

@@ -6,7 +6,7 @@ import { useState } from "react"
 interface Props {
     namber?: number
 }
-const CartShoping = ({ namber = 5 }: Props) => {
+const CartCounter = ({ namber = 5 }: Props) => {
 
 
     const [numero, setNumero] = useState<number>(namber)
@@ -29,6 +29,5 @@ const CartShoping = ({ namber = 5 }: Props) => {
     )
 }
 
-export default CartShoping
+export default CartCounter
 
- 
