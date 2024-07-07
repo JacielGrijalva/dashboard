@@ -7,8 +7,6 @@ interface Props {
     params: { id: string }
 }
 
-
-
 //Generar meta datas dinamicas
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
 

@@ -7,6 +7,8 @@ import { SimplePokemon } from '../interfaces/simple-pokemon';
 interface Props {
     pokemon: SimplePokemon
 }
+
+
 const PokemonCart = ({ pokemon }: Props) => {
 
     const { id, name } = pokemon
